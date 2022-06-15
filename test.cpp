@@ -151,8 +151,6 @@ private:
 
 int main()
 {
-	setlocale(LC_ALL, "rus");
-
 	Dagger dgr;
 	Bow bw;
 	MagicStick stick;
@@ -175,25 +173,6 @@ int main()
 
 	Lol.Use();
 
-
-	/*fstream test;
-
-	try
-	{
-		test.open("�haracter.txt", fstream::in | fstream::out | fstream::app);
-
-		test.read((char*)&Chel, sizeof(Hero));
-
-		test.close();
-	}
-	catch (const fstream::failure& fuck)
-	{
-		test.close();
-
-		cout << "�� �����!!" << endl;
-		cout << fuck.what() << endl;
-		cout << fuck.code() << endl;
-	}*/
 
 	return 0; 
 }
